@@ -23,8 +23,3 @@
 	autostash = true
 [merge]
 	ff = no
-
-[commit]
-	template = /Users/jamesleong/.stCommitMsg
-[url "https://jyleong:3a4815f45faa677647411173960ef887a4a4f8e6@github.com"]
-	insteadOf = https://github.com
