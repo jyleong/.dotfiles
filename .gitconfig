@@ -1,0 +1,30 @@
+[user]
+	name = James Leong
+	email = jyleong@users.noreply.github.com
+[push]
+	default = matching
+[core]
+	autocrlf = input
+	safecrlf = true
+	editor = vim
+	excludesfile = /Users/jamesleong/.gitignore_global
+[alias]
+	f = fetch
+	ci = commit
+	st = status
+	co = checkout
+	br = branch
+	lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+	lg = !"git lg1"
+[pull]
+	rebase = preserve
+[rebase]
+	autostash = true
+[merge]
+	ff = no
+
+[commit]
+	template = /Users/jamesleong/.stCommitMsg
+[url "https://jyleong:3a4815f45faa677647411173960ef887a4a4f8e6@github.com"]
+	insteadOf = https://github.com
