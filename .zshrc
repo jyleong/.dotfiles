@@ -7,7 +7,7 @@ export ZSH=$HOME/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="agnoster"
 
-plugins=(git node npm brew osx extract)
+plugins=(git gitfast colorize zsh-syntax-highlighting node npm brew osx extract)
 
 source $ZSH/oh-my-zsh.sh
 
