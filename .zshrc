@@ -13,10 +13,13 @@ plugins=(git gitfast colorize node npm brew osx extract)
 
 source $ZSH/oh-my-zsh.sh
 
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
 # default editor
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
-# export PATH="$PATH:$(go env GOPATH)/bin"
+export PATH="$PATH:$(go env GOPATH)/bin"
 
 
