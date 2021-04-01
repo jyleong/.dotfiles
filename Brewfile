@@ -10,3 +10,4 @@ brew "git"
 brew "zsh"
 cask "google-chrome"
 cask "visual-studio-code"
+
